@@ -1,0 +1,71 @@
+    // Test Case 1: First Division
+    cout << "\nTest Case 1: First Division (>= 60%)" << endl;
+    StudentDivision student1;
+    student1.marks = {85, 92, 78, 88, 90};
+    student1.calculateTotal();
+    student1.calculatePercentage();
+    student1.determineDivision();
+    student1.displayResults();
+    
+    // Test Case 2: Second Division
+    cout << "\nTest Case 2: Second Division (50-59%)" << endl;
+    StudentDivision student2;
+    student2.marks = {55, 58, 52, 56, 59};
+    student2.calculateTotal();
+    student2.calculatePercentage();
+    student2.determineDivision();
+    student2.displayResults();
+    
+    // Test Case 3: Third Division
+    cout << "\nTest Case 3: Third Division (40-49%)" << endl;
+    StudentDivision student3;
+    student3.marks = {45, 42, 48, 44, 46};
+    student3.calculateTotal();
+    student3.calculatePercentage();
+    student3.determineDivision();
+    student3.displayResults();
+    
+    // Test Case 4: Fail
+    cout << "\nTest Case 4: Fail (< 40%)" << endl;
+    StudentDivision student4;
+    student4.marks = {35, 38, 32, 36, 34};
+    student4.calculateTotal();
+    student4.calculatePercentage();
+    student4.determineDivision();
+    student4.displayResults();
+    
+    // Test Case 5: Edge case - exactly 60%
+    cout << "\nTest Case 5: Edge Case - Exactly 60%" << endl;
+    StudentDivision student5;
+    student5.marks = {60, 60, 60, 60, 60};
+    student5.calculateTotal();
+    student5.calculatePercentage();
+    student5.determineDivision();
+    student5.displayResults();
+    
+    // Test Case 6: Edge case - exactly 50%
+    cout << "\nTest Case 6: Edge Case - Exactly 50%" << endl;
+    StudentDivision student6;
+    student6.marks = {50, 50, 50, 50, 50};
+    student6.calculateTotal();
+    student6.calculatePercentage();
+    student6.determineDivision();
+    student6.displayResults();
+    
+    // Test Case 7: Edge case - exactly 40%
+    cout << "\nTest Case 7: Edge Case - Exactly 40%" << endl;
+    StudentDivision student7;
+    student7.marks = {40, 40, 40, 40, 40};
+    student7.calculateTotal();
+    student7.calculatePercentage();
+    student7.determineDivision();
+    student7.displayResults();
+    
+    // Test Case 8: Mixed performance
+    cout << "\nTest Case 8: Mixed Performance" << endl;
+    StudentDivision student8;
+    student8.marks = {95, 45, 88, 32, 76};
+    student8.calculateTotal();
+    student8.calculatePercentage();
+    student8.determineDivision();
+    student8.displayResults();

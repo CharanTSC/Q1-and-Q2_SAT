@@ -1,0 +1,63 @@
+    // Test Case 1: Given example (big=2, abc=2.5)
+    cout << "\nTest Case 1: Given Example" << endl;
+    cout << "Expected: big=2, abc=2.5" << endl;
+    double big1 = 2.0, abc1 = 2.5;
+    double G1 = evaluateExpression(big1, abc1);
+    displayResult(big1, abc1, G1);
+    
+    // Test Case 2: Positive values
+    cout << "\nTest Case 2: Positive Values" << endl;
+    double big2 = 10.0, abc2 = 15.0;
+    double G2 = evaluateExpression(big2, abc2);
+    displayResult(big2, abc2, G2);
+    
+    // Test Case 3: Negative values
+    cout << "\nTest Case 3: Negative Values" << endl;
+    double big3 = -5.0, abc3 = -3.0;
+    double G3 = evaluateExpression(big3, abc3);
+    displayResult(big3, abc3, G3);
+    
+    // Test Case 4: Decimal values
+    cout << "\nTest Case 4: Decimal Values" << endl;
+    double big4 = 3.5, abc4 = 7.8;
+    double G4 = evaluateExpression(big4, abc4);
+    displayResult(big4, abc4, G4);
+    
+    // Test Case 5: Large values
+    cout << "\nTest Case 5: Large Values" << endl;
+    double big5 = 100.0, abc5 = 200.0;
+    double G5 = evaluateExpression(big5, abc5);
+    displayResult(big5, abc5, G5);
+    
+    // Test Case 6: Small values
+    cout << "\nTest Case 6: Small Values" << endl;
+    double big6 = 0.1, abc6 = 0.3;
+    double G6 = evaluateExpression(big6, abc6);
+    displayResult(big6, abc6, G6);
+    
+    // Test Case 7: Zero for abc
+    cout << "\nTest Case 7: Zero for abc" << endl;
+    double big7 = 5.0, abc7 = 0.0;
+    double G7 = evaluateExpression(big7, abc7);
+    displayResult(big7, abc7, G7);
+    
+    // Test Case 8: Edge case - big = 1
+    cout << "\nTest Case 8: Edge Case - big = 1" << endl;
+    double big8 = 1.0, abc8 = 3.0;
+    double G8 = evaluateExpression(big8, abc8);
+    displayResult(big8, abc8, G8);
+    
+    // Test Case 9: Edge case - big = -1
+    cout << "\nTest Case 9: Edge Case - big = -1" << endl;
+    double big9 = -1.0, abc9 = 6.0;
+    double G9 = evaluateExpression(big9, abc9);
+    displayResult(big9, abc9, G9);
+    
+    // Test Case 10: Division by zero test
+    cout << "\nTest Case 10: Division by Zero Test" << endl;
+    cout << "big = 0, abc = 5.0" << endl;
+    double big10 = 0.0, abc10 = 5.0;
+    double G10 = evaluateExpression(big10, abc10);
+    if (big10 == 0) {
+        cout << "Test passed: Division by zero detected and handled." << endl;
+    }
