@@ -1,1 +1,1 @@
-These are the test cases for Q1and Q2    for testing the capabilities of Cursor part of our SAT Report
+Cursor generated Code for Q2 and  the test cases for Q1and Q2    for testing the capabilities of Cursor part of our SAT Report
